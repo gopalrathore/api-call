@@ -53,9 +53,7 @@ class CustomerListingPage extends Component {
     this.growl.show({ severity: 'error', summary: 'Error Message', detail: message });
   }
 
-  componentWillReceiveProps(nextProps) {  
-    console.log("will recieve", nextProps);
-      
+  componentWillReceiveProps(nextProps) {      
 
     this.setState({ loading: false })
 
@@ -71,9 +69,7 @@ class CustomerListingPage extends Component {
   }
 
 
-  componentDidMount() {
-    console.log("did mount");
-    
+  componentDidMount() {   
 
     if (this.props.auth.isAuthenticated) {
 
